@@ -31,7 +31,21 @@ def print_tree(tree):
 		print_tree(left_child)
 		print this_element
 		print_tree(right_child)
-		
+
+# finding if an element is in the tree
+def contains(tree,element):
+	if tree == None
+		return False
+	else:	
+		left_child = tree[0]
+		this_element = tree[1]
+		right_child = tree[2]
+		if this_element == this_element:
+			return True
+		elif this_element > element:
+			return contains(left_child,element)
+		elif:
+			return contains(right_child,element)
 
 t0 = (None, "midpoint", None)
 t1 = insert(t0,"aashish")
@@ -40,7 +54,9 @@ t3 = insert(t2, "jikky")
 t4 = insert(t3, "rohit")
 
 # printing the tree 
-print_tree(t4)
+# print_tree(t4)
+
+print contains("midpoint", t4)
 
 
 
