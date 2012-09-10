@@ -56,8 +56,8 @@ def insert_in_tree(tree, element):
 def main():
 	tree = None
 	while True:
-		element = raw_input("enter name")
-		if element:
+		element = raw_input("enter name(enter q to quit adding name) : ")
+		if element != "q":
 			tree=insert_in_tree(tree, element)
 		else:
 			break
