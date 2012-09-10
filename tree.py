@@ -30,7 +30,6 @@ def print_tree(tree):
 		right_child = tree[2]
 		print_tree(left_child)
 		print this_element
-
 		print_tree(right_child)
 
 # finding if an element is in the tree
@@ -48,6 +47,7 @@ def contains(tree,element):
 		else:
 			return contains(right_child,element)
 
+
 def insert_in_tree(tree, element):
 	temp = tree 
 	tree = insert(temp, element)
@@ -55,6 +55,8 @@ def insert_in_tree(tree, element):
 
 def main():
 	tree = None
+	#######################################################################################################
+	# inserting in the tree.......
 	while True:
 		element = raw_input("enter name(enter q to quit adding name) : ")
 		if element != "q":
@@ -62,14 +64,19 @@ def main():
 		else:
 			break
 
+	##################################### printing the tree############################################### 
+	#print_tree(tree)
+	choice =  raw_input("want to print the tree???(press y to print) ")
+	if choice == "y":
+		print_tree(tree)
 
-	#t1 = insert_in_tree(tree,"aashish")
-	#t2 = insert(t1, "vinny")
-	#t3 = insert(t2, "jikky")
-	#t4 = insert(t3, "rohit")
-	# printing the tree 
-	print_tree(tree)
-	#print contains("midpoint", t4)
+	#################################### searching for a node#############################################
+	key = raw_input("enter the key value yo want to find: ")
+	if contains(key,tree):
+		print key, "is present in the tree"
+	else:
+		print key, "is not present in the tree"
+
 
 if __name__ == "__main__":
 	main()
