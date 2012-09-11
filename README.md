@@ -13,6 +13,7 @@ anyone intersted in using the codes should have python version > 2.0 avoid pytho
 
 
 2)on windows download python from this link http://www.python.org/getit/ it is installed in c dir in folder python27
+only for vjdhama (this site is up dude...:)..)
 
 ---------------------------------------------------------------
 ---------------------------------------------------------------
