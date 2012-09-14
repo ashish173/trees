@@ -1,7 +1,6 @@
 #!usr/bin/python
 # this a binary tree implementaion in python
-# DDING 
-
+# DDING adding
 import sys
 import os
 
